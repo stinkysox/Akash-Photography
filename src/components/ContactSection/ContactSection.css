@@ -1,0 +1,88 @@
+.contact-container {
+  background-color: #124170; /* Updated background */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.book-now-btn {
+  background-color: #90d1ca;
+  color: black;
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #d98d00;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 60px);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.icon-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 28px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle glass effect */
+}
+
+/* Icon-specific colors */
+.icon-btn.email {
+  color: #ea4335;
+}
+.icon-btn.email:hover {
+  background-color: #ea4335;
+  color: white;
+}
+
+.icon-btn.youtube {
+  color: #ff0000;
+}
+.icon-btn.youtube:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.icon-btn.instagram {
+  color: #e1306c;
+}
+.icon-btn.instagram:hover {
+  background-color: #e1306c;
+  color: white;
+}
+
+.icon-btn.whatsapp {
+  color: #25d366;
+}
+.icon-btn.whatsapp:hover {
+  background-color: #25d366;
+  color: white;
+}
+
+.contact-text {
+  font-size: 16px;
+  margin: 4px 0;
+}

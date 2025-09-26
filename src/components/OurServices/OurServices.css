@@ -1,0 +1,102 @@
+.our-services {
+  background: #124170;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.subheading {
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 1.4;
+}
+
+.main-heading span {
+  color: beige;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  justify-items: center;
+}
+
+.service-card {
+  max-width: 300px;
+  cursor: pointer;
+  position: relative;
+}
+
+.service-card img {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+.service-card img.zoomed {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+/* ✅ Placeholder */
+.image-placeholder {
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  background: linear-gradient(110deg, #1e4a78 25%, #2a5c92 50%, #1e4a78 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* ✅ Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ✅ Hide image until loaded */
+.service-card img.hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.service-card img.visible {
+  opacity: 1;
+  position: relative;
+}
+
+.service-card p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

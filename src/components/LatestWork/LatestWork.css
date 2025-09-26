@@ -1,0 +1,207 @@
+/* Main container */
+.latest-work {
+  background: #f9f5f0; /* changed to beige */
+  color: #124170; /* text color */
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.latest-work h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Category buttons */
+.category-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  justify-content: flex-start;
+}
+
+.category-buttons button {
+  background: transparent;
+  border: none;
+  color: #124170; /* changed */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.category-buttons button.active {
+  color: #124170; /* changed */
+  border-bottom: 2px solid #124170; /* changed */
+}
+
+.loading-spinner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-spinner p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Scrollbar for small devices */
+
+/* Image grid: responsive */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* default: 2 columns */
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-items: center;
+  align-items: center;
+  grid-auto-rows: 300px;
+  position: relative;
+}
+
+/* Gallery images */
+.gallery-img,
+.image-placeholder {
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-img {
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(18, 65, 112, 0.2); /* match color #124170 */
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+
+/* Placeholder shimmer while loading */
+.image-placeholder {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(110deg, #e0d4b8 25%, #c9b890 50%, #e0d4b8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Hide image until loaded */
+.gallery-img.hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gallery-img.visible {
+  opacity: 1;
+  position: relative;
+}
+
+/* Lightbox modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 65, 112, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.modal-close-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #124170;
+  color: beige;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-images {
+  text-align: center;
+  color: #124170;
+}
+
+.instagram-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.glow-icon {
+  font-size: 2.5rem;
+  color: #e1306c;
+  animation: glow 1.5s infinite alternate;
+  transition: transform 0.3s;
+}
+
+.glow-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* 1 image per row on very small screens */
+  }
+  .gallery-img,
+  .image-placeholder {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 images per row on large screens */
+  }
+}

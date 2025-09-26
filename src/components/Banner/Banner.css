@@ -1,0 +1,93 @@
+.banner {
+  padding-top: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 15%;
+  background-color: #f9f5f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.banner p {
+  width: 90%;
+  max-width: 900px;
+  font-size: 20px;
+  line-height: 1.9rem;
+  font-weight: 400;
+  color: #2c2c2c;
+}
+
+.banner-button-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner-button-container button {
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 0.05); /* translucent base */
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 6px 24px rgba(255, 255, 255, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* First button: darker base with subtle white glow */
+.banner-button-container button:first-child {
+  background: rgba(30, 30, 30, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.banner-button-container button:first-child:hover {
+  transform: scale(1.05);
+  background: rgba(30, 30, 30, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1), 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Second button: with bluish tint for a luxury accent */
+.banner-button-container button:last-child {
+  background: rgba(30, 30, 30, 0.4); /* Match dark glass look */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 24px rgba(255, 255, 255, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.25);
+  color: white;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.banner-button-container button:last-child:hover {
+  background: rgba(30, 30, 30, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1), 0 4px 20px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/* Highlighted word style */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .banner {
+    padding-top: 20%;
+    height: auto;
+  }
+
+  .banner p {
+    font-size: 16px;
+    line-height: 1.6rem;
+    width: 95%;
+  }
+}

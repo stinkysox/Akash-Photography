@@ -1,0 +1,35 @@
+.stats-wrapper {
+  background: #f9f5f0;
+  color: #124170;
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat-item h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-item p {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0;
+}
+
+@media (min-width: 768px) {
+  .stats-wrapper {
+    flex-direction: row;
+    height: 40vh;
+  }
+
+  .stat-item {
+    width: 200px;
+  }
+}
