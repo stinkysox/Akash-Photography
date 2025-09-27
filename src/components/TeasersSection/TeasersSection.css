@@ -26,12 +26,13 @@
   margin-bottom: 40px;
 }
 
-.section-title {
+.section-title-teaser {
   font-size: 2rem;
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
-.section-subtitle {
+.section-subtitle-teaser {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.8);
 }

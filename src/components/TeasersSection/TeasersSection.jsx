@@ -99,8 +99,8 @@ const TeasersSection = () => {
     >
       <div className="content-wrapper">
         <header className="section-header">
-          <h2 className="section-title">Behind the Lens</h2>
-          <p className="section-subtitle">Capturing moments in motion</p>
+          <h2 className="section-title-teaser">Behind the Lens</h2>
+          <p className="section-subtitle-teaser">Capturing moments in motion</p>
         </header>
 
         <div

@@ -17,34 +17,28 @@ const LatestWork = () => {
   const categoryKeys = Object.keys(initialCategories);
   const [activeCategory, setActiveCategory] = useState(categoryKeys[0] || "");
   const [selectedImage, setSelectedImage] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [imagesLoadedCount, setImagesLoadedCount] = useState(0);
+  const [loadedImages, setLoadedImages] = useState(new Set());
 
   const imagesInCategory = initialCategories[activeCategory] || [];
 
+  // Reset loaded images when category changes
   useEffect(() => {
-    setLoading(true);
-    setImagesLoadedCount(0);
+    setLoadedImages(new Set());
   }, [activeCategory]);
 
-  const handleImageLoad = () => {
-    setImagesLoadedCount((prev) => prev + 1);
+  const handleImageLoad = (imageUrl) => {
+    setLoadedImages((prev) => new Set([...prev, imageUrl]));
   };
 
-  useEffect(() => {
-    if (
-      imagesLoadedCount === imagesInCategory.length &&
-      imagesInCategory.length > 0
-    ) {
-      setLoading(false);
-    }
-  }, [imagesLoadedCount, imagesInCategory.length]);
+  const handleImageError = (imageUrl) => {
+    setLoadedImages((prev) => new Set([...prev, imageUrl]));
+  };
 
   return (
     <div className="latest-work">
       <h2 className="section-title">Our Latest Work</h2>
 
-      {/* Category buttons */}
+      {/* Category buttons - Remove loading dependency for immediate visual feedback */}
       <div className="category-nav">
         {categoryKeys.map((category) => (
           <button
@@ -59,22 +53,12 @@ const LatestWork = () => {
         ))}
       </div>
 
-      {/* Loading overlay */}
-      {loading && (
-        <div className="loading-spinner-overlay">
-          <div className="loading-spinner">
-            <p>Loading images...</p>
-          </div>
-        </div>
-      )}
-
-      {/* Image grid */}
+      {/* Image grid with individual loading states */}
       <motion.div
         className="image-grid"
         initial="hidden"
         animate="visible"
         key={activeCategory}
-        style={{ visibility: loading ? "hidden" : "visible" }}
       >
         {imagesInCategory.length ? (
           imagesInCategory.map((imageObj, index) => (
@@ -84,12 +68,23 @@ const LatestWork = () => {
               variants={itemVariants}
               whileHover={{ scale: 1.03 }}
             >
+              {/* Shimmer placeholder */}
+              {!loadedImages.has(imageObj.imageUrl) && (
+                <div className="image-placeholder">
+                  <div className="shimmer-effect"></div>
+                </div>
+              )}
+
+              {/* Actual image */}
               <img
                 src={imageObj.imageUrl}
                 alt={`${activeCategory} photo ${index + 1}`}
-                className="gallery-img"
+                className={`gallery-img ${
+                  loadedImages.has(imageObj.imageUrl) ? "loaded" : "loading"
+                }`}
                 onClick={() => setSelectedImage(imageObj.imageUrl)}
-                onLoad={handleImageLoad}
+                onLoad={() => handleImageLoad(imageObj.imageUrl)}
+                onError={() => handleImageError(imageObj.imageUrl)}
               />
             </motion.div>
           ))

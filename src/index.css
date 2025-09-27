@@ -9,6 +9,29 @@
   box-sizing: border-box;
 }
 
+/* Remove blue highlight on iOS and Android */
+* {
+  -webkit-tap-highlight-color: transparent; /* iOS Safari & Android Chrome */
+  -webkit-touch-callout: none; /* Disable long-press menu on iOS */
+}
+
+/* Remove focus outline globally */
+*:focus {
+  outline: none;
+}
+
+/* Optional: for links and buttons specifically */
+a,
+button,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none; /* prevent selection highlight on double-tap */
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
 html,
 body {
   height: 100%;
