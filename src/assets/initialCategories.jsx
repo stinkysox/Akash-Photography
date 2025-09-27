@@ -18,7 +18,6 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/yxxzSDzv/image00020.jpg" },
     { imageUrl: "https://i.postimg.cc/3rfhQFg6/image00021.jpg" },
     { imageUrl: "https://i.postimg.cc/7ZGYWQdm/image00023.jpg" },
-    { imageUrl: "https://i.postimg.cc/Hn6sqGTP/image00024.jpg" },
     { imageUrl: "https://i.postimg.cc/d0GQqZqC/image00026.jpg" },
     { imageUrl: "https://i.postimg.cc/sgkDd4Ry/image00027.jpg" },
     { imageUrl: "https://i.postimg.cc/Jnmrt7n2/image00028.jpg" },

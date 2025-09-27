@@ -16,14 +16,6 @@ const stats = [
     count: 80,
     label: "Maternity Shoots",
   },
-  {
-    count: 8,
-    label: "Photography Experience (Years)",
-  },
-  {
-    count: 300,
-    label: "Happy Clients",
-  },
 ];
 
 const StatsCounter = () => {
