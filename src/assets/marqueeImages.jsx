@@ -8,7 +8,7 @@ export const marqueeImages = {
   ],
   "Left Images": [
     { imageUrl: "https://i.postimg.cc/bJcrPRrs/image00028.jpg" },
-    { imageUrl: "https://i.postimg.cc/bJcrPRrs/image00028.jpg" },
+    { imageUrl: "https://i.postimg.cc/Cx7kNdrg/image00030.jpg" },
     { imageUrl: "https://i.postimg.cc/qMz0z47L/image00016.jpg" },
     { imageUrl: "https://i.postimg.cc/m21Mrs1g/image00003.jpg" },
     { imageUrl: "https://i.postimg.cc/J7FvYJ1N/image00010.jpg" },
