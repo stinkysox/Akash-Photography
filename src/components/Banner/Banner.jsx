@@ -18,7 +18,7 @@ const Banner = () => {
   };
 
   const text =
-    "AKASH PHOTOGRAPHY — Capturing love, joy, and togetherness through photography and videography. With 7+ years of experience and 300+ happy couples, we create timeless stories from weddings, events, and concept shoots.";
+    "AKASH PHOTOGRAPHY — Capturing love, joy, and togetherness through photography and videography. With 8+ years of experience and 300+ happy couples, we create timeless stories from weddings, events, and concept shoots.";
   const words = text.split(" ");
 
   const containerVariants = {
