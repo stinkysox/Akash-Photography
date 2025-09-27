@@ -29,7 +29,7 @@ const ContactSection = () => {
           <MdEmail size={30} />
         </a>
         <a
-          href="https://www.youtube.com/"
+          href="https://www.youtube.com/@akash_photography_co"
           className="icon-btn youtube"
           target="_blank"
           rel="noopener noreferrer"

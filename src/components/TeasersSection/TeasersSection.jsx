@@ -50,10 +50,9 @@ const TeasersSection = () => {
     () => [
       "https://www.instagram.com/reel/DM50WCRhVjV/embed/",
       "https://www.instagram.com/reel/DOV4dodgglD/embed/",
-      "https://www.instagram.com/reel/DL2N-VfP-ap/embed/",
-      "https://www.instagram.com/reel/DIEun1hB0yS/embed/",
+      "https://www.instagram.com/reel/DOssOtgErTa/embed",
       "https://www.instagram.com/reel/DE6GQknhvg5/embed/",
-      "https://www.instagram.com/reel/DB22OEGPnoH/embed/",
+      "https://www.instagram.com/reel/DPBSpCHEk5u/embed",
     ],
     []
   );
