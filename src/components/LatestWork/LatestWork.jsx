@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { initialCategories } from "../../assets/initialCategories";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaTimes } from "react-icons/fa";
 import "./LatestWork.css";
 
-// Subtle animation configurations
 const itemVariants = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: {
@@ -23,18 +22,15 @@ const LatestWork = () => {
 
   const imagesInCategory = initialCategories[activeCategory] || [];
 
-  // Reset loading when category changes
   useEffect(() => {
     setLoading(true);
     setImagesLoadedCount(0);
   }, [activeCategory]);
 
-  // Handle image loaded
   const handleImageLoad = () => {
     setImagesLoadedCount((prev) => prev + 1);
   };
 
-  // Once all images loaded, stop loading
   useEffect(() => {
     if (
       imagesLoadedCount === imagesInCategory.length &&
@@ -46,14 +42,16 @@ const LatestWork = () => {
 
   return (
     <div className="latest-work">
-      <h2>Our Latest Work</h2>
+      <h2 className="section-title">Our Latest Work</h2>
 
       {/* Category buttons */}
-      <div className="category-buttons">
+      <div className="category-nav">
         {categoryKeys.map((category) => (
           <button
             key={category}
-            className={category === activeCategory ? "active" : ""}
+            className={`category-btn ${
+              category === activeCategory ? "active" : ""
+            }`}
             onClick={() => setActiveCategory(category)}
           >
             {category}
@@ -61,7 +59,7 @@ const LatestWork = () => {
         ))}
       </div>
 
-      {/* Loading spinner overlay */}
+      {/* Loading overlay */}
       {loading && (
         <div className="loading-spinner-overlay">
           <div className="loading-spinner">
@@ -70,7 +68,7 @@ const LatestWork = () => {
         </div>
       )}
 
-      {/* Image Grid */}
+      {/* Image grid */}
       <motion.div
         className="image-grid"
         initial="hidden"
@@ -82,9 +80,9 @@ const LatestWork = () => {
           imagesInCategory.map((imageObj, index) => (
             <motion.div
               key={`${activeCategory}-${index}`}
+              className="gallery-item"
               variants={itemVariants}
               whileHover={{ scale: 1.03 }}
-              style={{ overflow: "hidden" }}
             >
               <img
                 src={imageObj.imageUrl}
@@ -104,37 +102,33 @@ const LatestWork = () => {
 
       {/* Modal */}
       {selectedImage && (
-        <motion.div
-          className="modal"
-          onClick={() => setSelectedImage(null)}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-        >
-          <motion.img
-            src={selectedImage}
-            alt="Enlarged view"
-            initial={{ scale: 0.95 }}
-            animate={{ scale: 1 }}
-            onClick={(e) => e.stopPropagation()}
-            className="modal-image"
-          />
-          <button
-            className="modal-close-btn"
-            onClick={() => setSelectedImage(null)}
-          >
-            Close
-          </button>
-        </motion.div>
+        <div className="modal-overlay" onClick={() => setSelectedImage(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={selectedImage}
+              alt="Enlarged view"
+              className="modal-image"
+            />
+            <button
+              className="modal-close"
+              onClick={() => setSelectedImage(null)}
+            >
+              <FaTimes />
+            </button>
+          </div>
+        </div>
       )}
 
       {/* Instagram link */}
-      <div className="instagram-icon">
+      <div className="instagram-link">
         <a
           href="https://www.instagram.com/akashphotography.co/"
           target="_blank"
           rel="noopener noreferrer"
+          className="instagram-btn"
         >
-          <FaInstagram size={30} />
+          <FaInstagram />
+          <span>Follow us on Instagram</span>
         </a>
       </div>
     </div>

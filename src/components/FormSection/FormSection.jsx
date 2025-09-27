@@ -40,54 +40,96 @@ Excited to connect with you!`;
 
   return (
     <>
+      {/* Navbar stays independent and full width */}
       <Navbar />
-      <form className="form-container" onSubmit={handleSubmit}>
-        <input
-          name="fullName"
-          placeholder="Your Full Name *"
-          required
-          onChange={handleChange}
-        />
-        <input
-          name="email"
-          type="email"
-          placeholder="Email Address *"
-          required
-          onChange={handleChange}
-        />
-        <input
-          name="phone"
-          type="tel"
-          placeholder="Phone Number *"
-          required
-          onChange={handleChange}
-        />
-        <input
-          name="date"
-          type="date"
-          placeholder="Event Date"
-          onChange={handleChange}
-        />
-        <input
-          name="location"
-          placeholder="Event Location"
-          onChange={handleChange}
-        />
-        <textarea
-          name="message"
-          placeholder="Do you want to say something?"
-          onChange={handleChange}
-        />
-        <input
-          name="social"
-          placeholder="Share your social media profile"
-          onChange={handleChange}
-        />
 
-        <button className="submit-btn" type="submit">
-          Send via WhatsApp
-        </button>
-      </form>
+      {/* Form section starts below navbar */}
+      <div className="form-section">
+        <div className="form-container">
+          <div className="form-header">
+            <h1>Let's Create Something Beautiful</h1>
+            <p>Share your vision with us</p>
+          </div>
+
+          <form onSubmit={handleSubmit} className="form-fields">
+            <div className="form-grid">
+              <div className="form-group">
+                <input
+                  name="fullName"
+                  placeholder="Your Full Name"
+                  required
+                  onChange={handleChange}
+                  value={formData.fullName}
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                  onChange={handleChange}
+                  value={formData.email}
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone Number"
+                  required
+                  onChange={handleChange}
+                  value={formData.phone}
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  name="date"
+                  type="date"
+                  placeholder="Event Date"
+                  onChange={handleChange}
+                  value={formData.date}
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <input
+                name="location"
+                placeholder="Event Location"
+                onChange={handleChange}
+                value={formData.location}
+              />
+            </div>
+
+            <div className="form-group">
+              <textarea
+                name="message"
+                placeholder="Tell us about your vision..."
+                onChange={handleChange}
+                value={formData.message}
+                rows={4}
+              />
+            </div>
+
+            <div className="form-group">
+              <input
+                name="social"
+                placeholder="Social media profile (optional)"
+                onChange={handleChange}
+                value={formData.social}
+              />
+            </div>
+
+            <div className="form-submit">
+              <button type="submit">Send via WhatsApp</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </>
   );
 };

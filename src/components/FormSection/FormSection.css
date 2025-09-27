@@ -1,67 +1,105 @@
-.form-container {
-  background-color: black;
-  color: white;
-  padding: 2rem;
-  max-width: 100%;
-  margin: auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+.form-section {
   min-height: 100vh;
+  background-color: #f9f5f0; /* amber-50 */
+  color: #2e2e2e;
   font-family: "Poppins", sans-serif;
-  width: 100%;
+
+  padding: 2rem 1rem; /* form padding */
 }
 
-.form-title {
-  font-size: 1.8rem;
+/* Container */
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Header */
+.form-header {
   text-align: center;
-  margin-bottom: 1rem;
-  grid-column: span 2;
+  margin-bottom: 3rem;
 }
 
-input,
-textarea {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #444;
-  padding: 0.5rem 0;
-  color: white;
-  font-size: 0.9rem;
+.form-header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: #2e2e2e;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-header p {
+  color: #666;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Form Fields */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Grid for name/email/phone/date */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
   width: 100%;
-  transition: border-color 0.3s ease;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-bottom-color: #90d1ca;
-}
-
-.submit-btn {
-  background-color: #90d1ca;
   border: none;
-  padding: 0.9rem;
-  border-radius: 6px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-  grid-column: span 2;
-  width: 180px;
-  margin: auto;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  color: #2e2e2e;
+  transition: border-color 0.3s;
 }
 
-@media (max-width: 600px) {
-  .form-container {
-    padding: 1rem;
-    grid-template-columns: 1fr;
-  }
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
 
-  .form-title {
-    font-size: 1.5rem;
-  }
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-bottom-color: #444;
+}
 
-  .submit-btn {
-    grid-column: span 1;
-  }
+/* Disable textarea resize */
+.form-group textarea {
+  resize: none;
+}
+
+/* Button */
+.form-submit {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.form-submit button {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-submit button:hover {
+  background-color: #444;
 }

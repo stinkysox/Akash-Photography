@@ -152,6 +152,89 @@ export const initialCategories = {
     },
   ],
 
+  Engagement: [
+    {
+      imageUrl: "https://i.postimg.cc/RhsZQkC8/image00001.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/QCxM78D4/image00002.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/x8x1ywjF/image00003.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/4yLxbDNf/image00004.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/HnZk4qss/image00005.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/QC4dk2xV/image00006.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/59nyVC58/image00007.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/NGpFcH8W/image00008.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/DywWJgyy/image00009.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/m2pPQHt2/image00010.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/kgVBwgbv/image00011.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/8zqsYgRY/image00012.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/GmZ9fnPL/image00013.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/pTBTy9wN/image00014.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/hj0jhJkB/image00015.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/GthpDLRY/image00016.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/nrcLmFxB/image00017.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/NM8yTCHM/image00018.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/4yBm2KP8/image00019.jpg",
+      category: "Engagement",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/DfgJwDhM/image00020.jpg",
+      category: "Engagement",
+    },
+  ],
+
   Haldi: [
     {
       imageUrl: "https://i.postimg.cc/ydbWb7gX/image00001.jpg",
@@ -240,6 +323,85 @@ export const initialCategories = {
     {
       imageUrl: "https://i.postimg.cc/4xVtHH7C/image00022.jpg",
       category: "Haldi",
+    },
+  ],
+
+  Sangeeth: [
+    {
+      imageUrl: "https://i.postimg.cc/zv5xSQ2M/image00001.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/BbsmczwW/image00002.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/T19CkcBF/image00003.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/ZncVfL1J/image00004.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/jqQgdsCv/image00005.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/qBXbMkgx/image00006.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/x1FFDtqT/image00007.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/0NMX8DJ6/image00008.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/BvrYtbxk/image00009.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/1zkC4XpW/image00010.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/nLyRMr4J/image00011.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/Pqg3NJW5/image00012.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/26nHWYGq/image00013.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/mkw8dSKd/image00014.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/GhK5zcCx/image00015.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/x1dF4WjY/image00016.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/bwvFBKy5/image00017.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/13YYhJXb/image00018.jpg",
+      category: "Sangeeth",
+    },
+    {
+      imageUrl: "https://i.postimg.cc/bwFFc3df/image00019.jpg",
+      category: "Sangeeth",
     },
   ],
 };
