@@ -1,7 +1,6 @@
 export const initialCategories = {
   Wedding: [
     { imageUrl: "https://i.postimg.cc/gJ07g1B0/image00001.jpg" },
-    { imageUrl: "https://i.postimg.cc/jdNR6J7F/image00002.jpg" },
     { imageUrl: "https://i.postimg.cc/SR2vhC4F/image00003.jpg" },
     { imageUrl: "https://i.postimg.cc/v84YBKHM/image00004.jpg" },
     { imageUrl: "https://i.postimg.cc/8PFSpf4C/image00007.jpg" },
@@ -18,7 +17,6 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/vTKw7GYM/image00019.jpg" },
     { imageUrl: "https://i.postimg.cc/yxxzSDzv/image00020.jpg" },
     { imageUrl: "https://i.postimg.cc/3rfhQFg6/image00021.jpg" },
-    { imageUrl: "https://i.postimg.cc/5tJdS7VH/image00022.jpg" },
     { imageUrl: "https://i.postimg.cc/7ZGYWQdm/image00023.jpg" },
     { imageUrl: "https://i.postimg.cc/Hn6sqGTP/image00024.jpg" },
     { imageUrl: "https://i.postimg.cc/d0GQqZqC/image00026.jpg" },
@@ -26,9 +24,7 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/Jnmrt7n2/image00028.jpg" },
     { imageUrl: "https://i.postimg.cc/L5Q2yzVc/image00029.jpg" },
     { imageUrl: "https://i.postimg.cc/FzHhgP0b/image00030.jpg" },
-    { imageUrl: "https://i.postimg.cc/7PKHYkyK/image00031.jpg" },
-    { imageUrl: "https://i.postimg.cc/D0PbmYnq/image00032.jpg" },
-    { imageUrl: "https://i.postimg.cc/xjvmsqMc/image00033.jpg" },
+
     { imageUrl: "https://i.postimg.cc/rFgrkbhT/image00034.jpg" },
     { imageUrl: "https://i.postimg.cc/kGmbJd3J/image00035.jpg" },
     { imageUrl: "https://i.postimg.cc/MKzQgxmt/image00036.jpg" },
@@ -43,7 +39,6 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/mDGDMNdV/image00045.jpg" },
     { imageUrl: "https://i.postimg.cc/fbLmtV6L/image00046.jpg" },
     { imageUrl: "https://i.postimg.cc/HLFMNy67/image00047.jpg" },
-    { imageUrl: "https://i.postimg.cc/MTRBJpL3/image00048.jpg" },
     { imageUrl: "https://i.postimg.cc/43Ytw5Qg/image00049.jpg" },
     { imageUrl: "https://i.postimg.cc/DzChfr98/IMG-8207.jpg" },
     { imageUrl: "https://i.postimg.cc/NFXvxW5H/IMG-8209.jpg" },
@@ -51,6 +46,26 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/W1TcMYjd/IMG-8232.jpg" },
     { imageUrl: "https://i.postimg.cc/Y9hHv478/IMG-8234.jpg" },
     { imageUrl: "https://i.postimg.cc/d1pKrqtF/IMG-8253.jpg" },
+
+    {
+      imageUrl:
+        "https://i.postimg.cc/gjj7KnPQ/A-hundred-hearts-would-be-too-few-to-carry-all-my-love-for-you-Pc-team-akashphotography-ap-ba.jpg",
+    },
+    { imageUrl: "https://i.postimg.cc/T1s4NfRC/IMG-8807.jpg" },
+    { imageUrl: "https://i.postimg.cc/HnNhvdpF/IMG-8808.jpg" },
+    { imageUrl: "https://i.postimg.cc/Fz6BCNrQ/IMG-8809.jpg" },
+    { imageUrl: "https://i.postimg.cc/ZYs25Frr/IMG-8810.jpg" },
+    { imageUrl: "https://i.postimg.cc/5yrRKb41/IMG-8812.jpg" },
+    { imageUrl: "https://i.postimg.cc/2yytxVfv/IMG-8813.jpg" },
+    { imageUrl: "https://i.postimg.cc/vTTKvcdN/IMG-8820.jpg" },
+    {
+      imageUrl:
+        "https://i.postimg.cc/0jj4CbqL/The-highest-happiness-on-earth-is-the-happiness-of-marriage-Pc-team-akashphotography-ap-banga.jpg",
+    },
+    { imageUrl: "https://i.postimg.cc/FzSB6w7G/IMG-8361.jpg" },
+    {
+      imageUrl: "https://i.postimg.cc/zDLvB7sT/DSC00968.jpg",
+    },
   ],
   Prewedding: [
     {
