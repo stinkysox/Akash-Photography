@@ -1,5 +1,5 @@
 .contact-container {
-  background-color: #124170; /* Updated background */
+  background-color: #954c2e; /* Updated background */
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -13,7 +13,7 @@
 }
 
 .book-now-btn {
-  background-color: #90d1ca;
+  background-color: beige;
   color: black;
   padding: 12px 30px;
   font-size: 18px;
@@ -25,7 +25,7 @@
 }
 
 .book-now-btn:hover {
-  background-color: #d98d00;
+  background-color: white;
 }
 
 .icon-grid {
