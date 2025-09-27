@@ -4,7 +4,6 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/jdNR6J7F/image00002.jpg" },
     { imageUrl: "https://i.postimg.cc/SR2vhC4F/image00003.jpg" },
     { imageUrl: "https://i.postimg.cc/v84YBKHM/image00004.jpg" },
-    { imageUrl: "https://i.postimg.cc/cHDpZd8Y/image00005.jpg" },
     { imageUrl: "https://i.postimg.cc/8PFSpf4C/image00007.jpg" },
     { imageUrl: "https://i.postimg.cc/gkLCFFcX/image00008.jpg" },
     { imageUrl: "https://i.postimg.cc/2yMgbTGS/image00009.jpg" },
@@ -16,7 +15,6 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/0NGxggfd/image00015.jpg" },
     { imageUrl: "https://i.postimg.cc/nhDpk99W/image00016.jpg" },
     { imageUrl: "https://i.postimg.cc/qRjTR8WN/image00017.jpg" },
-    { imageUrl: "https://i.postimg.cc/V6Ywm7Zy/image00018.jpg" },
     { imageUrl: "https://i.postimg.cc/vTKw7GYM/image00019.jpg" },
     { imageUrl: "https://i.postimg.cc/yxxzSDzv/image00020.jpg" },
     { imageUrl: "https://i.postimg.cc/3rfhQFg6/image00021.jpg" },
@@ -53,9 +51,6 @@ export const initialCategories = {
     { imageUrl: "https://i.postimg.cc/W1TcMYjd/IMG-8232.jpg" },
     { imageUrl: "https://i.postimg.cc/Y9hHv478/IMG-8234.jpg" },
     { imageUrl: "https://i.postimg.cc/d1pKrqtF/IMG-8253.jpg" },
-    { imageUrl: "https://i.postimg.cc/jqnTKJZS/IMG-8261.jpg" },
-    { imageUrl: "https://i.postimg.cc/ZKrhvzkk/IMG-8276.jpg" },
-    { imageUrl: "https://i.postimg.cc/MKkSGKFb/IMG-8282.jpg" },
   ],
   Prewedding: [
     {
